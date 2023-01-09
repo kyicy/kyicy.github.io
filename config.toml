@@ -7,6 +7,25 @@ theme = "PaperMod"
 name = "kyicy"
 homepage = "https://github.com/kyicy"
 
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[[menu.main]]
+name = "Archive"
+url = "archives"
+weight = 5
+
+[[menu.main]]
+name = "Search"
+url = "search"
+weight = 5
+
+[[menu.main]]
+name = "Tools"
+url = "/custom_html/tools.html"
+
 
 [params]
 defaultTheme = "auto"
@@ -21,3 +40,6 @@ hiddenInSingle = true
 URL = "https://github.com/kyicy.github.io/content"
 Text = "Suggest Changes"
 appendFilePath = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]

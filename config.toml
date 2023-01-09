@@ -20,7 +20,12 @@ weight = 5
 [[menu.main]]
 name = "Search"
 url = "search"
-weight = 5
+weight = 10
+
+[[menu.main]]
+name = "Tags"
+url = "tag"
+weight = 10
 
 [[menu.main]]
 name = "Tools"

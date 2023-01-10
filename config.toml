@@ -46,7 +46,7 @@ hiddenInList = true
 hiddenInSingle = true
 
 [params.editPost]
-URL = "https://github.com/kyicy.github.io/content"
+URL = "https://github.com/kyicy.github.io/tree/master/content"
 Text = "Suggest Changes"
 appendFilePath = true
 

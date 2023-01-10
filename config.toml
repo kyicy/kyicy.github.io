@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Raw Thoughts'
 theme = "PaperMod"
 
+googleAnalytics = "G-6ZBJPZ4FML"
+
+
 [author]
 name = "kyicy"
 homepage = "https://github.com/kyicy"
@@ -33,6 +36,7 @@ url = "/custom_html/tools.html"
 
 
 [params]
+env = "production"
 defaultTheme = "auto"
 ShowReadingTime = true
 

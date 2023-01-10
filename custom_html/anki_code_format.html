@@ -8,7 +8,7 @@
     <link
       rel="stylesheet"
       id="themeSrc"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css"
     />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <link
@@ -17,6 +17,18 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/clojure.min.js"
+      integrity="sha512-PCX6a3vuzcRuEnBjixCs5jtBA3c9SdEEkekFIQD3B2kRIYsljEWs1memcCIc1tQjg08VI89g8aeb8S1/Ar/mtA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/dart.min.js"
+      integrity="sha512-bGD+4cxYCU/tc3EI8ov+qam4lH4X1dngndIGq2qFBU4hIwqDtIRIV0gY5yG7qnSD7mRacExa+uCaJ+0YlPBK3w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <section class="container">
@@ -92,7 +104,7 @@
       );
     }
     window.addEventListener("DOMContentLoaded", (event) => {
-      const langs = hljs.listLanguages();
+      const langs = hljs.listLanguages().sort();
       const langSelect = document.getElementById("langs");
       for (const lang of langs) {
         const opt = document.createElement("option");
@@ -105,12 +117,22 @@
       }
 
       const themeSelect = document.getElementById("theme");
-      const themes = ["default", "github", "github-dark"];
+      const themes = [
+        "default",
+        "github",
+        "github-dark",
+        "stackoverflow-dark",
+        "stackoverflow-light",
+        "obsidian",
+        "agate",
+        "androidstudio",
+        "googlecode",
+      ].sort();
       for (const theme of themes) {
         const opt = document.createElement("option");
         opt.value = theme;
         opt.innerHTML = theme;
-        if (theme === "default") {
+        if (theme === "github-dark") {
           opt.defaultSelected = true;
         }
         themeSelect.appendChild(opt);

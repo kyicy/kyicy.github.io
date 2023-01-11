@@ -4,6 +4,7 @@ title = 'Raw Thoughts'
 theme = "PaperMod"
 
 googleAnalytics = "G-6ZBJPZ4FML"
+enableRobotsTXT = true
 
 
 [author]
@@ -27,7 +28,7 @@ weight = 10
 
 [[menu.main]]
 name = "Tags"
-url = "tag"
+url = "tags"
 weight = 10
 
 [[menu.main]]

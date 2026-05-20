@@ -2293,7 +2293,8 @@
       "node_modules/mathjax-full/components/src/output/chtml/fonts/tex/lib/output/chtml/fonts/tex": "",
       "node_modules/mathjax-full/components/src/output/chtml/fonts/tex/lib/output/common/fonts/tex": "",
       "node_modules/mathjax-full/components/src/output/svg/fonts/tex/lib/output/common/fonts/tex": "",
-      "node_modules/mathjax-full/components/src/output/svg/fonts/tex/lib/output/svg/fonts/tex": ""
+      "node_modules/mathjax-full/components/src/output/svg/fonts/tex/lib/output/svg/fonts/tex": "",
+      "content/template": ""
     },
     "FOLDER_TAGS": {
       "content": "",
@@ -4567,7 +4568,8 @@
       "node_modules/mathjax-full/components/src/output/chtml/fonts/tex/lib/output/chtml/fonts/tex": "",
       "node_modules/mathjax-full/components/src/output/chtml/fonts/tex/lib/output/common/fonts/tex": "",
       "node_modules/mathjax-full/components/src/output/svg/fonts/tex/lib/output/common/fonts/tex": "",
-      "node_modules/mathjax-full/components/src/output/svg/fonts/tex/lib/output/svg/fonts/tex": ""
+      "node_modules/mathjax-full/components/src/output/svg/fonts/tex/lib/output/svg/fonts/tex": "",
+      "content/template": ""
     },
     "Syntax": {
       "Begin Note": "START",
@@ -4598,9 +4600,8 @@
   "Added Media": [],
   "File Hashes": {
     "content/vault/2026/05/202605191353.md": "b820395ebc3a1553fddecd06c28612c1",
-    "content/vault/Untitled.md": "2b85ec029a39eaa30d2c40a285d36339",
-    "content/vault/2026/05/202605201320.md": "be19b7bf8b80f5b366f51881e01eecdb",
-    "content/vault/2026/05/202605201328.md": "1e3cbcdf8612ac37ebdc176c98c7a748"
+    "content/vault/2026/05/202605201328.md": "3bc256cf32042f227f6aeecd8d441b3c",
+    "content/vault/2026/05/202605201410.md": "920e32e86e2f317ddd56103007f8e9e2"
   },
   "fields_dict": {
     "Basic": [

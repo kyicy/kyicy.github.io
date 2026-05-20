@@ -1,0 +1,10 @@
+{
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "node_modules/",
+    "docs/",
+    "quartz/"
+  ],
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative"
+}

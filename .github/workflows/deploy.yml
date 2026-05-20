@@ -16,7 +16,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check-content-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      should-deploy: ${{ steps.changes.outputs.should-deploy }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check for content changes
+        id: changes
+        run: |
+          # Check if there are any changes in content directory compared to the previous commit
+          if git diff --name-only HEAD~1 HEAD | grep -q "^content/"; then
+            echo "should-deploy=true" >> $GITHUB_OUTPUT
+            echo "Content changes detected"
+          else
+            echo "should-deploy=false" >> $GITHUB_OUTPUT
+            echo "No content changes detected"
+          fi
+
   build:
+    needs: check-content-changes
+    if: needs.check-content-changes.outputs.should-deploy == 'true'
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +57,8 @@ jobs:
           path: public
 
   deploy:
-    needs: build
+    needs: [check-content-changes, build]
+    if: needs.check-content-changes.outputs.should-deploy == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -4,5 +4,4 @@ title: Raw Thoughts
 # Raw Thoughts
 
 ## Learning Paths
-
-1. [[moc/202605221105|C# Learning Path]]
+1. [[moc/202605221105|CSharp Learning Path]]

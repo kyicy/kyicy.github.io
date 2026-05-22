@@ -1,4 +1,8 @@
 ---
 title: Raw Thoughts
 ---
-Hello World!
+# Raw Thoughts
+
+## Learning Paths
+
+1. [[moc/202605221105|C# Learning Path]]

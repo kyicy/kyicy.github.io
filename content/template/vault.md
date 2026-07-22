@@ -2,6 +2,9 @@
 aliases:
 title:
 ---
+
+TARGET DECK: Vault::
+
 START
 md
 Front:
@@ -13,5 +16,4 @@ Front:
 ## Context & Details
 
 Back:
-
 END

@@ -9,5 +9,7 @@
   "link-with-alias",
   "find-unlinked-files",
   "better-word-count",
-  "tag-wrangler"
+  "tag-wrangler",
+  "dataview",
+  "templater-obsidian"
 ]

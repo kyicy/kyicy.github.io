@@ -1,7 +1,10 @@
 ---
 title: Raw Thoughts
 ---
-# Raw Thoughts
+## Project
 
-## Learning Paths
-1. [[moc/202605221105|CSharp Learning Path]]
+```dataview
+TABLE src,title, date
+WHERE type = "project"
+SORT date ASC
+```

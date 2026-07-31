@@ -11,4 +11,5 @@ date: <% tp.date.now("YYYY-MM-DD HH:mm:ss") %>
 type: episode
 src: "<%* tR += src %>"
 project: "<%* tR += project %>"
+resource:
 ---
